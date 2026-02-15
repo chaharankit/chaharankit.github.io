@@ -15,7 +15,7 @@ export const siteContent: SiteContent = {
     tagline: 'Engineering enterprise products that stay fast as complexity grows.',
     summary:
       'I design and ship scalable web applications, integration plugins, and APIs with measurable business impact. My focus is clean architecture, reliable delivery, and thoughtful user experience.',
-    image: '/images/about.jpg',
+    image: '/images/bg1.png',
     ctas: [
       { label: 'Contact Me', href: '#contact', variant: 'primary' },
       { label: 'Download Resume', href: '/pdf/ankitcv.pdf', variant: 'ghost' },
@@ -30,7 +30,7 @@ export const siteContent: SiteContent = {
       'I am currently working as a Full-Stack .NET Developer, collaborating with cross-functional teams to deliver enterprise-grade solutions across web platforms and integrations.',
       'My work spans backend APIs, data design, front-end interfaces, and DevOps pipelines. I enjoy translating ambiguous product requirements into stable, maintainable software.',
     ],
-    image: '/images/staff-1.jpg',
+    image: '/images/bg1.png',
     facts: [
       { label: 'Name', value: 'Ankit Chahar' },
       { label: 'Location', value: 'Gurugram, Haryana, India' },
