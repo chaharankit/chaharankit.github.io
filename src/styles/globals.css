@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+  background-color: #070d14;
+  color: #e6edf8;
+  text-rendering: geometricPrecision;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -10;
+  opacity: 0.18;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 0.5px, transparent 0.5px);
+  background-size: 3px 3px;
+}
+
+@layer base {
+  ::selection {
+    background-color: rgba(255, 138, 0, 0.28);
+    color: #f8fbff;
+  }
+
+  a,
+  button,
+  input,
+  textarea {
+    outline-color: #ff8a00;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply relative mx-auto w-full max-w-6xl px-6 py-24 md:px-10;
+  }
+
+  .card-surface {
+    @apply rounded-2xl border border-brand-line/80 bg-brand-surface/85 shadow-panel backdrop-blur-sm;
+  }
+
+  .section-intro {
+    @apply mb-10 max-w-3xl text-balance text-lg text-brand-muted;
+  }
+
+  .text-gradient {
+    background: linear-gradient(120deg, #ff8a00 0%, #ffd580 30%, #00d2c8 70%, #6ad7ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .nav-link {
+    @apply rounded-full px-4 py-2 text-sm font-semibold tracking-wide text-brand-muted transition;
+  }
+
+  .nav-link:hover {
+    @apply bg-brand-elevated text-brand-text;
+  }
+
+  .nav-link-active {
+    @apply bg-brand-elevated text-brand-text shadow-glow;
+  }
+}
